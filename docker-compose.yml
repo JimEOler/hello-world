@@ -10,3 +10,13 @@ services:
     labels:
       - "support_url=https://yourwebsite.com"
       - "project_url=https://github.com/JimEOler/hello-world"
+docker run -d \ #'-d' just run the command detached, you can ignore this
+
+  -p 8080:8080 \ #these are not always the same (you might se 8080:80 for example)
+  -v /location/of/trainingData:/usr/share/tessdata 
+  -v /location/of/extraConfigs:/configs \
+  -v /location/of/logs:/logs \
+  -e DOCKER_ENABLE_SECURITY=false \
+  -e INSTALL_BOOK_AND_ADVANCED_HTML_OPS=false \
+  --name stirling-pdf \
+  frooodle/s-pdf:latest
