@@ -7,8 +7,8 @@ RUN rm -rf /usr/share/nginx/html/*
 # Copy our HTML into the container
 COPY index.html /usr/share/nginx/html/index.html
 
-# Expose port 80
-EXPOSE 80
+# Expose port 4433
+EXPOSE 4433
 
 # Nginx runs in the foreground by default in this image
 CMD ["nginx", "-g", "daemon off;"]
