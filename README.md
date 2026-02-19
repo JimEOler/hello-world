@@ -1,6 +1,9 @@
 # 🌍 Hello World — Containerized Web Site
 # Version 1.1
 
+## Support
+<Support>https://forums.unraid.net/topic/your-support-thread</Support>
+
 A simple Hello World HTML page served by Nginx, containerized with Docker, and automatically published to Docker Hub via GitHub Actions.
 
 ---
